@@ -3,10 +3,12 @@ pipeline {
 	agent any
 /*	
 	tools {
-        maven "maven3"
+        maven "MAVEN3"
+        jdk "OracleJDK11"
     }
 */	
     environment {
+        /* environment vars to be used in future stages */
         NEXUS_VERSION = "nexus3"
         NEXUS_PROTOCOL = "http"
         NEXUS_URL = "172.31.40.209:8081"
